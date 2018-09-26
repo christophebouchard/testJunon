@@ -11,7 +11,7 @@ import requests
 import datetime as dt
 import time
 import logging
-logging.basicConfig(filename=/tmp/jingo.log', level=logging.DEBUG)
+logging.basicConfig(filename='/tmp/jingo.log', level=logging.DEBUG)
 logging.debug('start debug')
 
 CONFIGURATION_ENCODING_FORMAT = "utf-8"
