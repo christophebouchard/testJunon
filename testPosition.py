@@ -44,8 +44,7 @@ def intent_received(hermes, intent_message):
 	print(intent_message.intent.intent_name)
 	print ()
 
-	"""
-	if intent_message.intent.intent_name == 'position':
+	if intent_message.intent.intent_name == 'testJunon:position':
 		sentence = 'Il est '
 		print(intent_message.intent.intent_name)
 
@@ -60,7 +59,6 @@ def intent_received(hermes, intent_message):
 	elif intent_message.intent.intent_name == 'Joseph:greetings':
 
 		hermes.publish_end_session(intent_message.session_id, "De rien!")
-	"""
 
 
 with Hermes(MQTT_ADDR) as h:
