@@ -40,7 +40,7 @@ def verbalise_minute(i):
 def intent_received(hermes, intent_message):
 
 	print('start debug')
-  print()
+	print()
 	print(intent_message.intent.intent_name)
 	print ()
 
