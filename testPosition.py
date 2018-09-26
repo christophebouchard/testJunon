@@ -10,6 +10,7 @@ import random
 import requests
 import datetime as dt
 import time
+import logging
 
 CONFIGURATION_ENCODING_FORMAT = "utf-8"
 CONFIG_INI = "config.ini"
@@ -41,7 +42,10 @@ def action_wrapper(hermes, intentMessage, conf):
     - conf : a dictionary that holds the skills parameters you defined 
     Refer to the documentation for further details. 
     """ 
-    city = intentMessage.slots.position.first().value
+    #city = intentMessage.slots.position.first().value
+    city = 'Bangalore'
+    print city
+    logging.info(city)
     
     #headers = {'accept': 'application/json', 'authorization': 'Basic anVub246UlFXSnVub25YcG0yWA=='}
     #response = requests.get('https://junon---develop-sr3snxi-ma2sa5nwhuqdk.fr-1.platformsh.site/v1/status', auth=('junon', 'RQWJunonXpm2X'))
