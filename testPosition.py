@@ -11,6 +11,8 @@ import requests
 import datetime as dt
 import time
 import logging
+logging.basicConfig(filename=/tmp/jingo.log', level=logging.DEBUG)
+logging.debug('start debug')
 
 CONFIGURATION_ENCODING_FORMAT = "utf-8"
 CONFIG_INI = "config.ini"
@@ -45,7 +47,7 @@ def action_wrapper(hermes, intentMessage, conf):
     #city = intentMessage.slots.position.first().value
     city = 'Bangalore'
     print city
-    logging.info(city)
+    logging.debug(city)
     
     #headers = {'accept': 'application/json', 'authorization': 'Basic anVub246UlFXSnVub25YcG0yWA=='}
     #response = requests.get('https://junon---develop-sr3snxi-ma2sa5nwhuqdk.fr-1.platformsh.site/v1/status', auth=('junon', 'RQWJunonXpm2X'))
